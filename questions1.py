@@ -90,9 +90,9 @@ for i in range(4):
     plt.axis("off")
 plt.show()
 
-# =========================================================
+
 # Question 5: Morphological Operations – Erosion to Closing
-# =========================================================
+
 _, binary = cv2.threshold(img, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
 kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (5,5))
 
