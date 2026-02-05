@@ -47,9 +47,9 @@ for i in range(3):
     plt.axis("off")
 plt.show()
 
-# ======================================
+
 # Question 3: Edge Detection – Sobel & Canny
-# ======================================
+
 blur = cv2.GaussianBlur(img, (3,3), 0)
 
 sx = cv2.Sobel(blur, cv2.CV_64F, 1, 0)
