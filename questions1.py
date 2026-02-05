@@ -30,9 +30,9 @@ for i in range(4):
     plt.axis("off")
 plt.show()
 
-# =================================================
+
 # Question 2: Contrast Enhancement – Hist & Stretch
-# =================================================
+
 hist_eq = cv2.equalizeHist(img)
 stretch = cv2.normalize(img, None, 0, 255, cv2.NORM_MINMAX)
 
