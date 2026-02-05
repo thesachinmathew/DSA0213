@@ -68,9 +68,9 @@ for i in range(3):
     plt.axis("off")
 plt.show()
 
-# ==================================================
+
 # Question 4: Image Restoration – Deblurring & Denoising
-# ==================================================
+
 blurred = cv2.GaussianBlur(img, (7,7), 1.5)
 noise = np.random.normal(0, 10, img.shape)
 noisy_blur = np.clip(blurred + noise, 0, 255).astype(np.uint8)
