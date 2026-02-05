@@ -1,6 +1,5 @@
-# ================================
 # Common Imports & Image Upload
-# ================================
+
 import cv2, numpy as np, matplotlib.pyplot as plt
 from google.colab import files
 
@@ -8,9 +7,9 @@ uploaded = files.upload()
 img_name = list(uploaded.keys())[0]
 img = cv2.imread(img_name, 0)  # grayscale
 
-# =========================================================
+
 # Question 1: Image Smoothing – Gaussian & Median Filtering
-# =========================================================
+
 noisy = img.copy()
 p = 0.02
 r = np.random.rand(*img.shape)
